@@ -1,0 +1,26 @@
+{
+  "cordova-plugin-appcenter-analytics": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-appcenter-analytics@^0.3.4"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-appcenter-crashes": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-appcenter-crashes"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-appcenter-push": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-appcenter-push"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}
