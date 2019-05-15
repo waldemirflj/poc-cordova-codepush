@@ -27,6 +27,6 @@
     <plugin name="cordova-plugin-appcenter-crashes" spec="0.3.4" />
     <plugin name="cordova-plugin-appcenter-push" spec="0.3.4" />
     <platform name="android">
-        <preference name="APP_SECRET" value="3c128be3-f9c8-4d98-8b9c-bd89a1ab25ce" />
+        <preference name="APP_SECRET" value="99ea8df5-197c-46e4-a605-162498df1105" />
     </platform>
 </widget>
