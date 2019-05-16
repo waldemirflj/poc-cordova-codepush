@@ -113,3 +113,18 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+
+/* App */
+.enablePush {
+    margin-top: 20px;
+}
+
+.enablePush  label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enablePush label input[type="checkbox"] {
+    margin-right: 10px;
+}
