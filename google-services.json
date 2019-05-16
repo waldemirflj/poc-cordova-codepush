@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "258128568920",
+    "firebase_url": "https://poc-cordova-codepush.firebaseio.com",
+    "project_id": "poc-cordova-codepush",
+    "storage_bucket": "poc-cordova-codepush.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258128568920:android:0402ac914d9d99d9",
+        "android_client_info": {
+          "package_name": "codepush.waldemir.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258128568920-tubfi65uk34fg38o8lk6spq4id5lgo23.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "codepush.waldemir.dev",
+            "certificate_hash": "f38304d958e8ddd25bfa0b42e4b98ca5e68f7527"
+          }
+        },
+        {
+          "client_id": "258128568920-vvok4npmd81lmjum7k9jv5abf1q9prmk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1s8X6hqaufkqaV5hePEq4Xnytol_VjU4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258128568920-vvok4npmd81lmjum7k9jv5abf1q9prmk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -28,5 +28,10 @@
     <plugin name="cordova-plugin-appcenter-push" spec="0.3.4" />
     <platform name="android">
         <preference name="APP_SECRET" value="99ea8df5-197c-46e4-a605-162498df1105" />
+        <preference name="APPCENTER_APP_SECRET" value="99ea8df5-197c-46e4-a605-162498df1105" />
     </platform>
+    <platform name="android">
+        <resource-file src="google-services.json" target="app/google-services.json" />
+    </platform>
+    <engine name="android" spec="^7.1.4" />
 </widget>
