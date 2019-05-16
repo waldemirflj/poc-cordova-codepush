@@ -1,0 +1,28 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-appcenter-analytics": {
+      "PACKAGE_NAME": "codepush.waldemir.dev"
+    },
+    "cordova-plugin-appcenter-crashes": {
+      "PACKAGE_NAME": "codepush.waldemir.dev"
+    },
+    "cordova-plugin-appcenter-push": {
+      "PACKAGE_NAME": "codepush.waldemir.dev"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "codepush.waldemir.dev"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-appcenter-shared": {
+      "PACKAGE_NAME": "codepush.waldemir.dev"
+    }
+  }
+}
