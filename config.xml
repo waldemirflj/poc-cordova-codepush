@@ -10,6 +10,9 @@
     <content src="index.html" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
+    <access origin="https://codepush.azurewebsites.net" />
+    <access origin="https://codepush.blob.core.windows.net" />
+    <access origin="https://codepushupdates.azureedge.net" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
@@ -18,6 +21,10 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
+        <resource-file src="google-services.json" target="app/google-services.json" />
+        <preference name="APP_SECRET" value="99ea8df5-197c-46e4-a605-162498df1105" />
+        <preference name="APPCENTER_APP_SECRET" value="99ea8df5-197c-46e4-a605-162498df1105" />
+        <preference name="CodePushDeploymentKey" value="QPtxjSAOjgdjczUSZoP5CX1xaZBCHkbRG3ihE" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
@@ -26,12 +33,11 @@
     <plugin name="cordova-plugin-appcenter-analytics" spec="^0.3.4" />
     <plugin name="cordova-plugin-appcenter-crashes" spec="0.3.4" />
     <plugin name="cordova-plugin-appcenter-push" spec="0.3.4" />
-    <platform name="android">
-        <preference name="APP_SECRET" value="99ea8df5-197c-46e4-a605-162498df1105" />
-        <preference name="APPCENTER_APP_SECRET" value="99ea8df5-197c-46e4-a605-162498df1105" />
-    </platform>
-    <platform name="android">
-        <resource-file src="google-services.json" target="app/google-services.json" />
-    </platform>
+    <plugin name="cordova-plugin-code-push" spec="^1.11.18" />
+    <plugin name="cordova-plugin-file" spec="^4.3.3" />
+    <plugin name="cordova-plugin-file-transfer" spec="^1.6.3" />
+    <plugin name="cordova-plugin-zip" spec="^3.1.0" />
+    <plugin name="cordova-plugin-browsersync" spec="^1.1.0" />
     <engine name="android" spec="^7.1.4" />
+    <engine name="browser" spec="^5.0.4" />
 </widget>
