@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src https://codepush.azurewebsites.net 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
@@ -19,10 +20,19 @@
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
             </div>
-            <div class="enablePush">
-                <label for="enablePush">
-                    <input type="checkbox" name="enablePush" id="enablePush"> Enable App Center Push
-                </label>
+            
+            <div class="treEmUm">
+                <div class="enablePush">
+                    <label for="enablePush">
+                        <input type="checkbox" name="enablePush" id="enablePush"> Enable App Center Push
+                    </label>
+                </div>
+                <div class="checkForUpdate">
+                    <button id="checkForUpdate">Update</button>
+                </div>
+                <div class="version">
+                    <p>v1.0.0</p>
+                </div>
             </div>
         </div>
 
