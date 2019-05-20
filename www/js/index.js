@@ -29,8 +29,17 @@ var app = {
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
 
-        // App Center: Push
-        this.appCenterPush();
+        // App Center: CodePush
+        codePush.sync(null, { 
+            updateDialog: true, 
+            installMode: InstallMode.IMMEDIATE 
+        });
+
+        // App Center: CodePush
+        this.checkForUpdate();
+
+        // App Center: Push Notification
+        this.pushNotification();
         this.enablePush();
         this.checkPush();
     },
@@ -47,7 +56,7 @@ var app = {
         console.log('Received Event: ' + id);
     },
 
-    appCenterPush: function() {
+    pushNotification: function() {
         const onNotificationReceived = (pushNotification) => {
             let message = pushNotification.message;
             let title = pushNotification.title;
@@ -63,8 +72,6 @@ var app = {
             if (pushNotification.customProperties && Object.keys(pushNotification.customProperties).length > 0) {
                 message += '\nCustom properties:\n' + JSON.stringify(pushNotification.customProperties);
             }
-            
-            console.log(title, message);
         };
 
         AppCenter.Push.addEventListener('notificationReceived', onNotificationReceived);
@@ -104,6 +111,21 @@ var app = {
         }
         
         AppCenter.Push.isEnabled(success, error);
+    },
+
+    checkForUpdate: function() {
+        const button = document.querySelector('#checkForUpdate');
+
+        button.addEventListener('click', () => {
+            codePush.checkForUpdate(function (update) {
+                if (!update) {
+                    alert('The app is up to date.');
+                } else {
+                    alert('An update is available! Should we download it?');
+                    codePush.restartApplication();
+                }
+            });
+        });
     }
 };
 
