@@ -115,6 +115,12 @@ h1 {
 }
 
 /* App */
+
+.app {
+    top: 0 !important;
+    margin-top: 15% !important;
+}
+
 .treEmUm {
     margin-top: 20px;
     text-transform: none;
@@ -124,7 +130,9 @@ h1 {
     margin: 0;
 }
 
-.treEmUm .checkForUpdate {
+.treEmUm .checkForUpdate,
+.treEmUm .trackEvent,
+.treEmUm .generateTestCrash {
     margin-top: 10px;
 }
 

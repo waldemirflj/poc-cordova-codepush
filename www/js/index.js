@@ -38,6 +38,16 @@ var app = {
         // App Center: CodePush
         this.checkForUpdate();
 
+        // App Center: Crashes
+        AppCenter.Crashes.setEnabled(
+            true, 
+            success => alert('crashes enabled'), 
+            error => alert(JSON.stringify(error))
+        );
+
+        // App Center: Analytics events
+        this.trackEvent();
+
         // App Center: Push Notification
         this.pushNotification();
         this.enablePush();
@@ -126,7 +136,27 @@ var app = {
                 }
             });
         });
-    }
+    },
+    
+    trackEvent: function() {
+        const button = document.querySelector('#trackEvent');
+
+        button.addEventListener('click', () => {
+            AppCenter.Analytics.trackEvent(
+                'Button clicked', { Pagina: 'Home', Title: 'Track event' }, 
+                success => alert('Event tracked.'), 
+                error => alert(JSON.stringify(error))
+            );
+        });
+    },
+    
+    generateTestCrash: function() {
+        const button = document.querySelector('#generateTestCrash');
+
+        button.addEventListener('click', () => {
+            AppCenter.Crashes.generateTestCrash();
+        });
+    },
 };
 
 app.initialize();
