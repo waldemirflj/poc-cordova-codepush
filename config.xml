@@ -25,6 +25,8 @@
         <preference name="APP_SECRET" value="99ea8df5-197c-46e4-a605-162498df1105" />
         <preference name="APPCENTER_APP_SECRET" value="99ea8df5-197c-46e4-a605-162498df1105" />
         <preference name="CodePushDeploymentKey" value="QPtxjSAOjgdjczUSZoP5CX1xaZBCHkbRG3ihE" />
+        <preference name="APPCENTER_ANALYTICS_ENABLE_IN_JS" value="true" />
+        <preference name="APPCENTER_CRASHES_ALWAYS_SEND" value="true" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
